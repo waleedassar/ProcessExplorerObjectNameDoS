@@ -1,0 +1,19 @@
+// ProcessExplorerCrash.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include "windows.h"
+#include "stdio.h"
+
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	
+	
+	wchar_t* pCrashName = L"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+
+	
+	CreateEvent(0,0,0,pCrashName);
+	Sleep(-1);
+	return 0;
+}
+
